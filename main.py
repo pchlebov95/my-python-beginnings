@@ -1,12 +1,25 @@
-import string, random
+import time
+import random
 
-all_characters = string.ascii_letters + string.digits + string.punctuation
-generated_password = ""
+print("WELCOME TO MATH-SPEED-TRAINER!\n")
+current_time = time.time()
+score = 0
 
-password_length = int(input("Choose your password length: "))
+for i in range(5):
+    num1 = random.randint(1, 20)
+    num2 = random.randint(1, 20)
 
-for i in range(password_length):
-    random_char = random.choice(all_characters)
-    generated_password += random_char
+    user_answer = int(input(f"What is {num1} + {num2}?: "))
 
-print(f"Your new generated password: {generated_password}")
+    if user_answer == num1 + num2:
+        score += 1
+        print("CORRECT!")
+        print("--------------------\n")
+    else:
+        print("INCORRECT!")
+        print("--------------------\n")
+
+
+end_time = time.time()
+total_time = end_time - current_time
+print(f"YOU GOT {score} OUT OF 5 CORRECT ANSWERS.\nYOUR TIME IS: {round(total_time)}s")
