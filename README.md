@@ -13,3 +13,8 @@ Welcome to my repository where I track my learning progress and store my mini pr
 * **Created:** After 6 weeks of learning.
 * **Topics used:** `time` and `random` libraries, `for` loops, conditional statements (`if/else`), arithmetic operations, rounding, terminal UX formatting.
 * **Description:** A mathematical console game that generates 5 random addition problems, checks the user's answers, counts the score, and measures the total time taken using a stopwatch. It features clean terminal formatting with separators for better user experience.
+
+* ### 3. ToDo Application (`03_todo_app`)
+* **Created:** After 6 weeks of learning.
+* **Topics used:** `while` loops, lists, `.append()` method, user interface formatting.
+* **Description:** A clean console application to add and display daily tasks with an elegant text-based layout.
