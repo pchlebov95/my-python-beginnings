@@ -9,9 +9,16 @@ while True:
         break
 
     elif menu == "1":
-        new_task = input("\nADD NEW TASK: ").upper()
-        memory.append(new_task)
-        print("\nNEW TASK ADDED.")
+
+        while True:
+            new_task = input("\nADD NEW TASK: ").upper()
+
+            if new_task.strip() == "":
+                print("TASK CANNOT BE EMPTY!")
+            else:
+                memory.append(new_task)
+                print("\nNEW TASK ADDED.")
+                break
 
     elif menu == "2":
         if len(memory) == 0:
@@ -21,3 +28,6 @@ while True:
             for data in memory:
                 print(f"{star} {data}")
             print("---------------------")
+
+    else:
+        print("INVALID OPTION. PLEASE CHOOSE 1, 2, OR 3.")
