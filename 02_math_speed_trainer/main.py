@@ -1,7 +1,8 @@
 import time
 import random
 
-print("WELCOME TO MATH-SPEED-TRAINER!\n")
+print("\nWELCOME TO MATH-SPEED-TRAINER!")
+print("-" * 30)
 current_time = time.time()
 score = 0
 
@@ -9,9 +10,16 @@ for i in range(5):
     num1 = random.randint(1, 20)
     num2 = random.randint(1, 20)
 
-    user_answer = int(input(f"What is {num1} + {num2}?: "))
+    while True:
+        user_answer = input(f"What is {num1} + {num2}?: ")
 
-    if user_answer == num1 + num2:
+        if user_answer.isdigit():
+            user_answer_numb = int(user_answer)
+            break
+        else:
+            print("Invalid input. Please enter a number.")
+
+    if user_answer_numb == num1 + num2:
         score += 1
         print("CORRECT!")
         print("--------------------\n")
