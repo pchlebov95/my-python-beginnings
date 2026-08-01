@@ -1,20 +1,17 @@
 # My Python Beginnings 🚀
 
-Welcome to my repository where I track my learning progress and store my mini projects. I am currently a student at the Engeto Python Academy.
+Welcome to my repository where I track my Python learning progress. Here are my first 3 mini-projects from my 6th week of studying. All projects have been refactored to clean code and include robust input validation to prevent crashes.
 
-## 📁 Project List
+## 📁 Project Overview
 
-### 1. Password Generator (`01_password_generator`)
-* **Created:** After 6 weeks of learning.
-* **Topics used:** `string` and `random` libraries, `for` loops, type casting, user input.
-* **Description:** A simple console application that generates a secure password based on the length requested by the user.
+### 1. Password Generator (v2.0)
+* **Description:** A secure tool for generating random passwords.
+* **Key Features:** Robust input validation using `.isdigit()` to handle invalid characters, negative numbers, or short password lengths (minimum 4 characters). Clean code with string/random modules.
 
-### 2. Math Speed Trainer (`02_math_speed_trainer`)
-* **Created:** After 6 weeks of learning.
-* **Topics used:** `time` and `random` libraries, `for` loops, conditional statements (`if/else`), arithmetic operations, rounding, terminal UX formatting.
-* **Description:** A mathematical console game that generates 5 random addition problems, checks the user's answers, counts the score, and measures the total time taken using a stopwatch. It features clean terminal formatting with separators for better user experience.
+### 2. Math Speed Trainer (v2.0)
+* **Description:** A terminal game that tests your math speed and accuracy under a time limit.
+* **Key Features:** Uses nested `while True` loops inside a `for` loop to handle user input securely. If the user makes a typo, the program doesn't crash but prompts for the answer again without resetting progress.
 
-* ### 3. ToDo Application (`03_todo_app`)
-* **Created:** After 6 weeks of learning.
-* **Topics used:** `while` loops, lists, `.append()` method, user interface formatting.
-* **Description:** A clean console application to add and display daily tasks with an elegant text-based layout.
+### 3. ToDo List (v2.0)
+* **Description:** A simple command-line task management application.
+* **Key Features:** Features a secure menu system (handles invalid choices gracefully). Includes data validation with `.strip()` to prevent users from adding blank tasks or empty spaces.
