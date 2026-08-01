@@ -13,7 +13,7 @@ while True:
         if password_length_numb >= 4:
             break
         else:
-            print("Password must be a at least 4 characters long")
+            print("Password must be at least 4 characters long")
 
     else:
         print("Invalid input. Please enter a number.")
