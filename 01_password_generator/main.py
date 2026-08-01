@@ -1,11 +1,25 @@
-import string, random
+import string
+import random
 
 all_characters = string.ascii_letters + string.digits + string.punctuation
 generated_password = ""
 
-password_length = int(input("Choose your password length: "))
+while True:
+    password_length = input("\nChoose your password length: ")
 
-for i in range(password_length):
+    if password_length.isdigit():
+        password_length_numb = int(password_length)
+
+        if password_length_numb >= 4:
+            break
+        else:
+            print("Password must be a at least 4 characters long")
+
+    else:
+        print("Invalid input. Please enter a number.")
+
+
+for i in range(password_length_numb):
     random_char = random.choice(all_characters)
     generated_password += random_char
 
