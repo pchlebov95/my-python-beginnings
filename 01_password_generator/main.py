@@ -1,6 +1,8 @@
 import string
 import secrets
 
+ALLOWED_CHARACTERS = string.ascii_letters + string.digits + string.punctuation
+
 def generate_length_password() -> int:
     """
     Ask the user for a password length and validate it.  
@@ -26,11 +28,10 @@ def create_password(length: int) -> str:
     Create a secure password from letters, digits, and punctuation.
     """
 
-    all_characters = string.ascii_letters + string.digits + string.punctuation
     password_chars = []
 
     for _ in range(length):
-        random_char = secrets.choice(all_characters)
+        random_char = secrets.choice(ALLOWED_CHARACTERS)
         password_chars.append(random_char)
 
     return ''.join(password_chars)
