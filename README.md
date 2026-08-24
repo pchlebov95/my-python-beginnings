@@ -1,6 +1,6 @@
 # My Python Beginnings 🚀
 
-Welcome to my repository where I track my Python learning progress. Here are my first 3 mini-projects from my 6th week of studying. All projects have been refactored to clean code and include robust input validation to prevent crashes.
+Welcome to my repository where I track my Python learning progress. Here are my first 3 mini-projects. All projects have been refactored to clean code and include robust input validation to prevent crashes.
 
 ## 📁 Project Overview
 
