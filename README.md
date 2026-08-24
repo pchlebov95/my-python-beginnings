@@ -4,9 +4,10 @@ Welcome to my repository where I track my Python learning progress. Here are my 
 
 ## 📁 Project Overview
 
-### 1. Password Generator (v2.0)
-* **Description:** A secure tool for generating random passwords.
-* **Key Features:** Robust input validation using `.isdigit()` to handle invalid characters, negative numbers, or short password lengths (minimum 4 characters). Clean code with string/random modules.
+### 1. Password Generator (v3.0)
+- **Description:** Cryptographically secure terminal password generator.
+- **Tech Stack:** Python 3, `secrets` (secure), `string`.
+- **Best Practices:** Type hints, PEP 8, Docstrings, `.join()` optimization, defensive `while` loop.
 
 ### 2. Math Speed Trainer (v2.0)
 * **Description:** A terminal game that tests your math speed and accuracy under a time limit.
