@@ -14,7 +14,7 @@ Key Features: Time-tracked arithmetic challenges, instant feedback, and score tr
 Best Practices: Type hints, PEP 8 styling, Docstrings, modular code architecture, and robust input validation.
 Tech Stack: Python 3, time, random.
 
-ToDo List (v3.0)
+3. ToDo List (v3.0)
 Description: A simple command-line task management application.
 Key Features: Task creation and display via an interactive command-line interface.
 Improvements in v3.0: Refactored from a single script into standalone functions, added type hints, docstrings, and fixed the end-of-list DASH divider alignment.
