@@ -2,7 +2,7 @@ memory = {}
 
 
 def add_task(task_dict: dict) -> None:
-    """Prompt the user to enter a new task and add it to the list."""
+    """Prompt the user to enter a new task and add it to the dictionary."""
     while True:
         new_task = input("\nADD NEW TASK: ").upper()
         if new_task.strip() == "":
