@@ -2,7 +2,7 @@ memory = {}
 
 
 def add_task(task_dict: dict) -> None:
-    """Prompt the user to enter a new task and add it to the dictionary."""
+    """Prompt the user to enter a new task and add it to the list."""
     while True:
         new_task = input("\nADD NEW TASK: ").upper()
         if new_task.strip() == "":
@@ -20,9 +20,12 @@ def show_task(task_dict: dict) -> None:
         print("\nYOUR TODO LIST IS EMPTY!")
     else:
         print("\n--- CURRENT TASKS ---")
+
         max_length = 0
+
         for key, value in task_dict.items():
             print(f"{key}) {value}")
+            
             if len(value) > max_length:
                 max_length = len(value)
 
