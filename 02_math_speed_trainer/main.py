@@ -3,16 +3,14 @@ import random
 
 DASH = "-" * 30
 
+
 def get_user_input(question_text: str) -> int:
     """Get validated integer from user input."""
     while True:
-        user_answer = input(question_text)
-
-        if user_answer.isdigit():
-            user_answer_numb = int(user_answer)
-            return user_answer_numb
-        else:
-            print("Invalid input. Please enter a number.")
+        try:
+            return int(input(question_text))
+        except ValueError:
+            print("INVALID INPUT. PLEASE ENTER A NUMBER.")
 
 
 def play_round() -> bool:
@@ -22,7 +20,7 @@ def play_round() -> bool:
 
     question = f"What is {num1} + {num2}?: "
     user_answer = get_user_input(question)
-        
+
     if user_answer == num1 + num2:
         print("CORRECT!")
         print(DASH)
