@@ -35,7 +35,7 @@ def show_task(task_dict: dict) -> None:
 def delete_task(task_dict: dict) -> None:
     """Prompt the user to enter a task number and delete it from the dictionary."""
     try:
-        user_option = int(input("\nWHICH TASK YOU WANT DELETE?: "))
+        user_option = int(input("\nWHICH TASK DO YOU WANT TO DELETE?: "))
     except ValueError:
         print("\nINVALID INPUT! PLEASE ENTER A NUMBER.")
         return
