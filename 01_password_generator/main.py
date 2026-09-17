@@ -35,7 +35,7 @@ if __name__ == "__main__":
         result_length = generate_length_password()
         complete_password = create_password(result_length)
 
-        print(f"Generated password: {complete_password}")
+        print(f"GENERATED PASSWORD: {complete_password}")
         user_choice = input("GENERATE ANOTHER PASSWORD? (Y/N): ").lower().strip()
 
         if user_choice != "y":
