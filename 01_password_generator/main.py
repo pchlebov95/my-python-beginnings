@@ -8,15 +8,15 @@ def generate_length_password() -> int:
     """Ask the user for a password length and validate it."""
     while True:
         try:
-            password_length = int(input("\nChoose your password length: "))
+            password_length = int(input("\nCHOOSE YOUR PASSWORD LENGTH: "))
 
             if password_length >= 4:
                 return password_length
             else:
-                print("Password must be at least 4 characters long")
+                print("PASSWORD MUST BE AT LEAST 4 CHARACTERS LONG")
 
         except ValueError:
-            print("Invalid input: Please enter a number.")
+            print("INVALID INPUT. PLEASE ENTER A NUMBER.")
 
 
 def create_password(length: int) -> str:
@@ -36,7 +36,7 @@ if __name__ == "__main__":
         complete_password = create_password(result_length)
 
         print(f"Generated password: {complete_password}")
-        user_choice = input("Generate another password? (y/n): ").lower().strip()
+        user_choice = input("GENERATE ANOTHER PASSWORD? (Y/N): ").lower().strip()
 
         if user_choice != "y":
             break
