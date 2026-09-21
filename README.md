@@ -21,6 +21,10 @@ Key Features: Time-tracked arithmetic challenges, instant feedback, and score tr
 Best Practices: Type hints, PEP 8 styling, Docstrings, modular code architecture, and robust input validation using try-except blocks to secure user answers against letters and empty inputs.
 Tech Stack: Python 3, time, random.
 
+**QA Manual Testing:**
+This project has been thoroughly tested using manual QA methodologies, including Boundary Value Analysis and Negative Testing. 
+👉 You can find the full test cases and results in the [TESTING.md](./02_math_speed_trainer/TESTING.md) file.
+
 3. ToDo List
     
 Description: Simple and interactive command-line task management application.
