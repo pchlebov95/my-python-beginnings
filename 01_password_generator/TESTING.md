@@ -1,7 +1,7 @@
 # TC001 - Valid password length input
 
 Test Steps:
-* Type the number "5" into the terminal.
+* Type the number  into the terminal.
 * Press Enter.
 
 Expected Result:
@@ -83,4 +83,14 @@ Test steps:
 
 Expected Result:
 * The program converts "N" into the lowercase "n"
+* The program ends.
+
+
+# TC009 - Typing invalid text instead of Y/N
+
+Test Steps:
+* Type the text "karel" into the terminal.
+* Press Enter.
+
+Expected Result:
 * The program ends.
