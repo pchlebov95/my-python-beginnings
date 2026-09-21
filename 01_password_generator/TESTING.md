@@ -1,7 +1,7 @@
 # TC001 - Valid password length input
 
 Test Steps:
-* Type the number  into the terminal.
+* Type the number "5" into the terminal.
 * Press Enter.
 
 Expected Result:
