@@ -14,7 +14,7 @@ Tech Stack: Python 3, secrets (secure), string.
 This project has been thoroughly tested using manual QA methodologies, including Boundary Value Analysis and Negative Testing. 
 👉 You can find the full test cases and results in the [TESTING.md](./01_password_generator/TESTING.md) file.
 
-3. Math Speed Trainer
+2. Math Speed Trainer
     
 Description: Terminal game that tests your mental math speed and accuracy.
 Key Features: Time-tracked arithmetic challenges, instant feedback, and score tracking.
