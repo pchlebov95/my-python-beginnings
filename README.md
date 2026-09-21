@@ -10,6 +10,10 @@ Key Features: Generates unpredictable passwords using secure generation methods 
 Best Practices: Type hints, PEP 8 styling, Docstrings, .join() optimization, defensive while loops, and robust error handling using try-except blocks to validate user input against empty values, letters, and short lengths.
 Tech Stack: Python 3, secrets (secure), string.
 
+**QA Manual Testing:**
+This project has been thoroughly tested using manual QA methodologies, including Boundary Value Analysis and Negative Testing. 
+👉 You can find the full test cases and results in the [TESTING.md](./01_password_generator/TESTING.md) file.
+
 3. Math Speed Trainer
     
 Description: Terminal game that tests your mental math speed and accuracy.
