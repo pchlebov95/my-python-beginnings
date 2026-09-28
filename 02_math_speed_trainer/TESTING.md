@@ -1,67 +1,80 @@
 # TC001 - Correct answer input
 
-Test Steps:
+**Pre-conditions:**
+* The program is running and displaying a math question, for example: "14 + 16 = ".
+
+**Test Steps:**
 * Type the correct answer (number 30 for 14 + 16) into the terminal.
 * Press Enter.
 
-Expected Result:
+**Expected Result:**
 * The program displays the message: "CORRECT!"
 * The program displays a divider line (dashes).
-* The program moves to the next question
-
+* The program moves to the next question.
 
 # TC002 - Incorrect answer input
 
-Test steps:
-* Type the incorrect answer (number 5 for 14 + 16) into the terminal.
-* Press Enter
+**Pre-conditions:**
+* The program is running and displaying a math question, for example: "14 + 16 = ".
 
-Expected Result:
+**Test Steps:**
+* Type the incorrect answer (number 5 for 14 + 16) into the terminal.
+* Press Enter.
+
+**Expected Result:**
 * The program displays the message: "INCORRECT!"
 * The program displays a divider line (dashes).
 * The program moves to the next question.
 
+# TC003 - Text input instead of a number
 
-# TC003 - Text input instead  of a number
+**Pre-conditions:**
+* The program is running and displaying a math question, for example: "14 + 16 = ".
 
-Test steps:
+**Test Steps:**
 * Type the text "jedi" into the terminal.
 * Press Enter.
 
-Expected Result:
+**Expected Result:**
 * The program displays the message: "INVALID INPUT. PLEASE ENTER A NUMBER"
 * The program repeats the same math question.
-
 
 # TC004 - Empty input
 
-Test steps:
-* Leave the input empty.
-* Press Enter
+**Pre-conditions:**
+* The program is running and displaying a math question, for example: "14 + 16 = ".
 
-Expected Result:
+**Test Steps:**
+* Leave the input empty.
+* Press Enter.
+
+**Expected Result:**
 * The program displays the message: "INVALID INPUT. PLEASE ENTER A NUMBER"
 * The program repeats the same math question.
 
-
 # TC005 - Final statistics with perfect score
 
-Test steps:
+**Pre-conditions:**
+* The program is running and the user is on the final math question, having answered all previous questions correctly.
+
+**Test Steps:**
 * Answer all 5 math questions correctly.
 * Press Enter after each answer.
 
-Expected Result:
+**Expected Result:**
 * The program displays message: "YOU GOT 5 OUT OF 5 CORRECT ANSWERS."
-* The program displays the total elapsed time in seconds ("TOTAL TIME: 12S").
-
+* The program displays the total elapsed time in seconds, such as "TOTAL TIME: 12S".
 
 # TC006 - Timer calculation with delay
 
-Test steps:
+**Pre-conditions:**
+* The program is ready to be started.
+
+**Test Steps:**
 * Start the program.
 * Wait 5 seconds before answering the first math question.
 * Answer all remaining questions and finish the game.
 
-Expected Result:
+**Expected Result:**
 * The program finishes and displays the final statistics.
-* The total time displays a value greater than 5 seconds ("TOTAL TIME: 6S").
+* The total time displays a value greater than 5 seconds, such as "TOTAL TIME: 6S".
