@@ -24,8 +24,8 @@ Welcome to my repository where I track my Python learning progress. Here are my 
 **3. ToDo List**
     
 **Description**: Simple and interactive command-line task management application.
-**Key Features**: Task creation with dynamic ID generation, task display with adaptive UI dividers, and task deletion.
-**Best Practices**: Type hints, PEP 8 styling, Docstrings, modular code architecture, defensive loops for user inputs, and input validation using try-except blocks to secure the menu system and task deletion against string inputs.
+**Key Features**: Task creation with secure chronological ID generation preventing data duplication or overwrite after deletion, task display with adaptive UI dividers, and task deletion.
+**Best Practices**: Type hints, PEP 8 styling, Docstrings, modular code architecture, defensive loops for user inputs, and input validation using try-except blocks to secure the menu system and task deletion against string inputs. 
 **Tech Stack**: Python 3.
 
 **QA Manual Testing**: This project has been thoroughly tested using manual QA methodologies, including State Transition Testing to evaluate how data deletion impacts dictionary memory, and Negative Testing for empty task inputs. 👉 You can find the full test cases and results in the TESTING.md file.
