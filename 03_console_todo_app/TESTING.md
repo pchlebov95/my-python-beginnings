@@ -41,12 +41,12 @@
 * Type "1" (ADD TASK) into the terminal and press Enter.
 * Type "task c" into the terminal and press Enter.
 
-**Status**:
-* PASS (Tested after code fix, ID counter now works correctly and no data is overwritten)
-
 **Expected Result:**
 * "task c" is successfully added as a new task with a new unique ID (ID 3).
 * The existing task with ID 2 remains unchanged.
+
+**Status**:
+* PASS (Tested after code fix, ID counter now works correctly and no data is overwritten)
 
 # TC004 - Valid option number 2 (SHOW TASKS)
 
