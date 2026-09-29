@@ -1,15 +1,17 @@
 memory = {}
+ID_COUNTER = 0
 
 
 def add_task(task_dict: dict) -> None:
     """Prompt the user to enter a new task and add it to the list."""
+    global ID_COUNTER
     while True:
         new_task = input("\nADD NEW TASK: ").upper()
         if new_task.strip() == "":
             print("TASK CANNOT BE EMPTY!")
         else:
-            task_id = len(task_dict) + 1
-            task_dict[task_id] = new_task
+            ID_COUNTER += 1
+            task_dict[ID_COUNTER] = new_task
             print("\nNEW TASK ADDED.")
             break
 
